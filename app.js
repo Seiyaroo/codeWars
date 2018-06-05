@@ -1,8 +1,5 @@
-var name = [""]
-function abbrevName(name) {
-  var stringToArray = name.split(" ")
-  var name1 = stringToArray[0].toString().charAt(0).toUpperCase();
-  var name2 = stringToArray[1].toString().charAt(0).toUpperCase();
-  return name1 + "." + name2;
+var replaceDots = function(str) {
+  var strToArray = str.split(".");
+  return strToArray.join('-');
 }
-abbrevName('sam harris');
+console.log(replaceDots('i.am.a.ginger'));
